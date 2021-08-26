@@ -1,0 +1,87 @@
+        /*fichier css: Style2.css
+        Whistler Clermont
+        Dernière modification : 21-05-2021 */
+
+.banniere{
+    background-image: url(../img/banniere.jpg);
+    background-size:cover;
+}
+@font-face
+{
+    font-family : Police;
+    src: url("../font/CinzelDecorative-Bold.ttf");
+}
+
+a{
+   font-family: Police;
+   color: white;
+   text-shadow: 0px 0px 4px black;
+}
+h1{
+    font-family: Police;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+}
+
+.lien{
+    color:white;
+    text-decoration-line: underline;
+    font-size: 1.5rem;
+}
+
+.hvr-grow:hover{
+    transition-duration: 0.5s;
+} 
+
+body{
+    background-image: url("../img/pattern-triforce-2x.png");
+    background-color: #234f30;
+}
+#dimension{
+    width:600px ;
+    height: 90%;
+    background-color:#87ceeb;
+    border: 2px;
+}
+
+.fonddiv{
+    background-color: darkolivegreen;
+}
+h2{
+    font-size: 2.5rem;
+    font-size: bold;
+    text-align: left;
+}
+h3{
+    font-size: 13px;
+    text-align: left;
+}
+h4{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+h5{
+    font-size: 14px;
+    column-width: 20%;
+}
+h6{
+    font-size: 10px;
+}
+.form-control2{
+    text-align: left;
+}
+.marge1{
+    margin-inline-start:30%;
+  }
+  .marge2{
+    margin-inline-start:65px;
+  }
+  .marge3{
+    margin-inline-start:21%;
+  }
+  .caractere{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  

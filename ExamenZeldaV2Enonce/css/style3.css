@@ -1,0 +1,33 @@
+        /*fichier css: Style3.css
+        Whistler Clermont
+        Dernière modification : 21-05-2021 */
+em {
+    font-weight: bold;
+    font-style: normal;
+    color: #f00;
+  }
+label{
+    font-size: 13px;
+} 
+ #inputmarge{
+   margin-inline-start:80px;
+ }
+ #inputmarge1{
+    margin-inline-start:48px;
+  }
+  #inputmarge2{
+    margin-inline-start:20px;
+  }
+  #inputmarge3{
+    margin-inline-start:20%;
+  }
+  #inputmarge4{
+    margin-inline-start:19%;
+  }
+  .inputmarge5{
+    margin-inline-start:30%;
+  }
+  #inputmarge6{
+    margin-inline-start:23%;
+    width: 10rem;
+  }

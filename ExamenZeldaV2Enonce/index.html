@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+index.html
+Laurent Drolet / Whistler Clermont
+Dernière modification : 21-05-2021
+-->
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>ZELDA</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="Hover-master/css/hover.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<header class="banniere">
+    <div class="container-fluid  text-center pt-3">
+        <div class="row">
+            <div class="col-1">
+                <a class="nav-item lien hvr-grow" href="#">Jeux</a>
+            </div>
+            <div class="col-2 mr-5">
+                <a class="nav-item lien hvr-grow" href="#">Marchandise</a>
+            </div>
+            <div class="col-2 mr-2">
+                <a class="nav-item lien hvr-grow" href="#">FanArt</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid  text-center sous-titre ">
+        <div class="row">
+            <div class="col-12">
+                <h1>La légende de </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="zelda">Zelda </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid separation">
+        <div class="row ">
+            <div class="col-12 text-center">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row pt-3">
+        <div class="col-12 ">
+            <input class="form-control" type="text" id="myInput" onkeyup="myFunction()" placeholder="Rechercher un jeu...">
+            <hr>
+            <ul class="list-group text-center" id="myUL">
+                <li class="list-group-item"><a href="#">Breath of the wild</a></li>
+                <li class="list-group-item"><a href="#">Ocarina of Time</a></li>
+
+                <li class="list-group-item"><a href="#">Four Swords</a></li>
+                <li class="list-group-item"><a href="#">The Minish Cap</a></li>
+
+                <li class="list-group-item"><a href="#">Skyward Sword</a></li>
+                <li class="list-group-item"><a href="#">Majora's Mask </a></li>
+
+                <li class="list-group-item"><a href="#">Twilight Princess</a></li>
+                <li class="list-group-item"><a href="#">The Legend of Zelda</a></li>
+
+                <li class="list-group-item"><a href="#">A Link to the Past</a></li>
+                <li class="list-group-item"><a href="#">Link's Awakening</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="container-fluid graphiques pt-5 " >
+    <div class="row ">
+        <div class="col-12 text-center pb-5" data-aos="fade-up">
+            <h1> Zelda en chiffres</h1>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-12 mb-3">
+            <div id="piechart" ></div>
+        </div>
+        <div class="col-12 pb-3">
+            <div id="regions_div" ></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid fonddiv pt-5">
+    <div class="row ">
+        <div class="col-8 offset-2 text-center pb-5" id="dimension">
+            <h2 class="pt-3"> Participez au concours</h2>
+            <h3>Courez la chance de gagner une copie du dernier 
+                Zelda ainsi qu'une figurine exclusive!</h3>
+                        
+            <form class="form-control2" id="formref" onsubmit="return valider()">
+                <br><br>
+                <labeL for ="inputText" class="caractere"> identification <em>*</em></labeL>
+
+                <input id="inputmarge" type="text" size= 8 id="inputText" name="inputText" 
+                maxlength="25" required /> 
+                        
+                <input type="text" size= 12 id="inputText" name="inputText" 
+                maxlength="25" required /> <br>
+                <label class="marge1"> Nom </label>  <label class="marge2"> Prenom</label>
+                <br><br> 
+
+                <labeL for ="inputdate" class="caractere"> Date de naissance <em>*</em></labeL> 
+                <input id="inputmarge1" type="date" size= 50 id="inputdate" 
+                min="1000-12-31" max="3000-12-31" name="inputdate" required /> <br><br><br>
+                
+                <labeL for ="inputText2" class="caractere"> Numero de telephone <em>*</em></labeL> 
+                <input id="inputmarge2" type="text" size= 7 id="inputText2" name="inputText2" 
+                maxlength="3" placeholder="area code" required />
+                
+                <labeL for ="inputText3"> - </labeL> 
+                <input type="text3" size= 15 id="inputText3" name="inputText3"
+                maxlength="8" placeholder="999-9999" pattern="[0-9]{3}-[0-9]{4}" required /><br>
+                <label class="marge1"> Code regional  Numero de telephone </label><br><br><br>
+
+                <labeL for ="inputmail" class="caractere"> E-mail <em>*</em> </labeL> 
+                <input id="inputmarge3" type="email" size= 30 id="inputmail" name="inputmail" 
+                maxlength="40" placeholder="Ex: myname@exemple.com" required /> <br>
+                <label class="marge1"> myname@exemple.com </label><br><br><br>
+
+                <labeL for ="inputText" class="caractere"> Adresse  <em>*</em></labeL> 
+                <input id="inputmarge4" type="text" size= 40 id="inputText" name="inputText" 
+                maxlength="25" placeholder="No 9999 rue Quebec" required /> <br>
+                <label class="marge1"> Numero de Porte </label><br>
+
+                <input class="inputmarge5" type="text" size= 40 id="inputText" name="inputText" 
+                maxlength="50" /> <br>
+                <label class="marge1"> Numero d'appartement </label><br>
+
+                <input class="inputmarge5" type="text" size= 17 id="inputText" name="inputText" 
+                maxlength="25" required />
+               
+                <input type="text" size= 17 id="inputText" name="inputText" 
+                maxlength="15" placeholder="Etat / Province" required /> <br>
+                <label class="marge1"> Ville </label> <label class="marge3"> Etat / Province </label><br> 
+                 
+                <input class="inputmarge5" type="text" size= 17 id="inputText" name="inputText" 
+                maxlength="7" placeholder="A1A 1Z1" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required /><br>
+                <label class="marge1"> Code  Postal </label> 
+                <br>
+                <br>
+                <br>
+                <label for="inputText6" class="caractere">Sexe <em>*</em></label>
+                <select id="inputmarge6" required>
+                    <option></option>
+                    <option value="choix1">Masculin</option>
+                    <option value="choix2">Feminin</option>
+                </select>
+                <br><br>
+
+                <h4>Pourquoi devriez-vous gagner?</h4>
+               
+                <textarea class="inputmarge5" rows="4" cols="47"></textarea> <br><br><br>
+
+                <input class="inputmarge5" type="submit"  value=" Soumettre ma candidature"/>
+            </form>
+                
+        </div>
+    </div>
+    <div class="row "> <br><br><br></div>
+</div>
+
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+<script src="js/script2.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({duration: 600});
+  </script>
+   
+</body>
+</html>

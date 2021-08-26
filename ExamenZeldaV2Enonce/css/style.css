@@ -1,0 +1,41 @@
+
+/*fichier css style.css
+Laurent Drolet / Whistler Clermont
+Dernière modification : 21-05-2021 */
+
+.sous-titre{
+    padding-bottom: 10%;
+    padding-top: 24%;
+}
+.zelda {
+    font-size: 5rem;
+}
+
+a:hover{
+    color: #11a30e;
+}
+.separation{
+    background-image: url("../img/hyrule_rule.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2%;
+}
+.graphiques{
+    background-color: black;
+}
+.list-group-item{
+    background-color: #d9a936;
+    border: 2px solid rgb(9, 60, 25);
+}
+.form-control{
+    background-color: #ceb373ad;
+    border: 2px solid rgb(255, 255, 255);
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+
+}
+hr{
+    border-top: 2px solid rgb(185, 195, 70);
+}
